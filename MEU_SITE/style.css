@@ -1,0 +1,9 @@
+body{
+    background-color: #a9a9a9;
+}
+
+ul.menu li{
+    display: inline;
+    background-color: rgb(39, 38, 38);
+    padding: 10px;
+}
