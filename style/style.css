@@ -303,11 +303,11 @@ footer{
     }
 
     .menu_link{
-        gap: 18px;
+        gap: 16px;
     }
 
     .menu_link_item{
-        font-size: 14px; 
+        font-size: 12px; 
     }
 
     .texto_imagem{
