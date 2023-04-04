@@ -23,27 +23,26 @@ header{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    padding: 1.2em;
+    padding: 1%;
 }
 
 .menu_logo{
     border-radius: 50%;
     box-shadow: 0px 0px 7px #e1e4f9;
-    height: 85px;
+    height: 80px;
     width: auto;
 }
 
 .menu_link{
     display: flex;
     flex-direction: row;
-    gap: 2em;
+    gap: 40px;
 }
 
 .menu_link_item{
     color: #e1e4f9;
     font-weight: 700;
-    font-size: 1.4em; 
-
+    font-size: 24px; 
 }
 
 .menu_link_item:hover{
@@ -62,42 +61,50 @@ header{
 
 .inicio{
     background: #0c1c9d;
+    padding: 56px;
+}
+
+.texto_imagem{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
-    gap: 2.5em;
-    padding: 4em;
+    gap: 5vw;
 }
 
 .inicio_texto{
     display: flex;
     flex-direction: column;
-    gap: 20em;
 }
 
 .inicio_texto_nome_profissao{
     text-align: center;
-    line-height: 3.3em;
+    line-height: 45px;
 }
 
 .inicio_texto_nome{
     font-weight: 900;
-    font-size: 4.5em;
+    font-size: 56px;
     color: #c3c9f4;
 }
 
 .inicio_texto_profissao{
     font-weight: 300;
-    font-size: 1.3em;
+    font-size: 22px;
     color: #e1e4f9;
+}
+
+.inicio_imagem{
+    margin-top: 10vh;
+    height: 30vh;
+    width: auto;
 }
 
 .inicio_contato{
     display: flex;
     flex-direction: row;
-    justify-content: end;
-    gap: 1.5em;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 12vh;
 }
 
 .inicio_contato i:hover{
@@ -110,13 +117,8 @@ header{
 }
 
 .inicio_contato_item i{
-    font-size: 1.5em;
+    font-size: 24px;
     color: #e1e4f9;
-}
-
-.inicio_imagem{
-    height: 30vh;
-    width: auto;
 }
 
 .gradient_inicio{
@@ -129,6 +131,7 @@ header{
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: justify;
 }
 
 .sobre_titulo{
@@ -140,7 +143,7 @@ header{
 .sobre_texto{
     color: white;
     font-weight: 100;
-    font-size: 1.5em;
+    font-size: 22px;
     margin-top: 2.5em;
     width: 50%;
 }
@@ -177,7 +180,7 @@ header{
 }
 
 .sobre_escolaridade{
-    font-size: 1em;
+    font-size: 16px;
 }
 
 .sobre_informacoes{
@@ -208,10 +211,16 @@ header{
 }
 
 .projetos_titulo,
-.contato_titulo{
+.contato_titulo,
+.certificados_titulo{
     color: black;
     font-size: 2em;
     font-weight: 700;
+}
+
+.projetos p,
+.certificados p{
+    font-size: 8em;
 }
 
 .gradient_projetos{
@@ -223,13 +232,18 @@ header{
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 2em;
-    font-size: 2.5em;
+    gap: 80px;
+    font-size: 40px;
     margin-top: 1em;
 }
 
+.contato_link_item:hover{
+    transform: scale(1.1);
+    opacity: 0.7;
+}
+
 .gradient_certificados{
-    height: 15vh;
+    height: 20vh;
     background: linear-gradient(#4c5cdd, #a5adee);
 }
 
@@ -238,4 +252,94 @@ footer{
     text-align: center;
     padding: 1.5em;
     font-size: 0.7em;
+}
+
+@media(max-width:900px){
+    .menu_logo{
+        height: 65px;
+        width: auto;
+    }
+
+    .menu_link{
+        gap: 30px;
+    }
+
+    .menu_link_item{
+        font-size: 18px; 
+    }
+
+    .inicio{
+        gap: 60px;
+        padding: 36px;
+    }
+
+    .inicio_texto_nome_profissao{
+        line-height: 30px;
+    }
+
+    .inicio_texto_nome{
+        font-size: 32px;
+    }
+
+    .inicio_texto_profissao{
+        font-size: 18px;
+    }
+
+    .sobre_texto{
+        font-size: 20px;
+        width: 65%;
+    }
+
+    .contato_link{
+        gap: 60px;
+        font-size: 36px;
+    }
+}
+
+@media(max-width:604px){
+    .menu_logo{
+        height: 50px;
+        width: auto;
+    }
+
+    .menu_link{
+        gap: 18px;
+    }
+
+    .menu_link_item{
+        font-size: 14px; 
+    }
+
+    .texto_imagem{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .inicio_texto_nome_profissao{
+        line-height: 30px;
+    }
+
+    .inicio_texto_nome{
+        font-size: 34px;
+    }
+
+    .inicio_texto_profissao{
+        font-size: 16px;
+    }
+
+    .sobre_texto{
+        font-size: 18px;
+        width: 80%;
+    }
+
+    .sobre_escolaridade{
+        font-size: 14px;
+    }
+
+    .contato_link{
+        gap: 40px;
+        font-size: 32px;
+    }
 }
