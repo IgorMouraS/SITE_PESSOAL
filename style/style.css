@@ -160,19 +160,12 @@ header{
     color: white;
 }
 
-.sobre_skill_titulo{
-    font-size: 1.6em;
+.sobre_skill{
+    margin-top: 2.5em;
 }
 
-.sobre_skill_texto{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 1em;
-    font-weight: 400;
-    margin-top: 1em;
-    font-size: 1.2em;
+.sobre_skill_imagem{
+    height: 400px;
 }
 
 .sobre_escolaridade i{
@@ -362,6 +355,10 @@ footer{
         width: 65%;
     }
 
+    .sobre_skill_imagem{
+        height: 300px
+    }
+
     .contato_link{
         gap: 60px;
         font-size: 36px;
@@ -417,6 +414,10 @@ footer{
 
     .sobre_escolaridade{
         font-size: 14px;
+    }
+
+    .sobre_skill_imagem{
+        height: 200px
     }
 
     .contato_link{
