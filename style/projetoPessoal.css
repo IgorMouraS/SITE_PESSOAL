@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno:wght@100;300;700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'MuseoModerno', cursive;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+header{
+    align-items: center;
+    background-color: #0c1c9d;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 1%;
+}
+
+.menu_logo{
+    border-radius: 50%;
+    box-shadow: 0px 0px 7px #e1e4f9;
+    height: 80px;
+    width: auto;
+}
+
+.menu_link{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+
+.menu_link_item{
+    color: #e1e4f9;
+    font-weight: 700;
+    font-size: 24px; 
+}
+
+.menu_link_item:hover{
+    transform: scale(1.04);
+    text-shadow: 0px 0px 20px white;
+}
+
+.menu_link_item:active{
+    transform: scale(0.9);
+}
+
+.gradient_header{
+    height: 15vh;
+    background: linear-gradient( #0c1c9d, #4c5cdd);
+}
+
+main{
+    background: #4c5cdd;
+    height: 64vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+}
+
+
+.gradient_main{
+    height: 20vh;
+    background: linear-gradient(#4c5cdd, #a5adee);
+}
+
+footer{
+    background: #a5adee;
+    text-align: center;
+    padding: 1.5em;
+    font-size: 0.7em;
+}
+
+@media(max-width:900px){
+    .menu_logo{
+        height: 65px;
+        width: auto;
+    }
+
+    .menu_link{
+        gap: 30px;
+    }
+
+    .menu_link_item{
+        font-size: 18px; 
+    }
+}
+
+@media(max-width:720px){
+    .menu_logo{
+        height: 50px;
+        width: auto;
+    }
+
+    .menu_link{
+        gap: 16px;
+    }
+
+    .menu_link_item{
+        font-size: 12px; 
+    }
+}
