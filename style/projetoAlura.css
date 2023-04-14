@@ -123,18 +123,6 @@ footer{
 }
 
 @media(max-width:900px){
-    .menu_logo{
-        height: 65px;
-        width: auto;
-    }
-
-    .menu_link{
-        gap: 30px;
-    }
-
-    .menu_link_item{
-        font-size: 18px; 
-    }
 
     .projetos_alura_item .projetos_item{
         width: 500px;
@@ -150,18 +138,6 @@ footer{
 }
 
 @media(max-width:720px){
-    .menu_logo{
-        height: 50px;
-        width: auto;
-    }
-
-    .menu_link{
-        gap: 16px;
-    }
-
-    .menu_link_item{
-        font-size: 12px; 
-    }
 
     .projetos_alura_item .projetos_item{
         width: 300px;
