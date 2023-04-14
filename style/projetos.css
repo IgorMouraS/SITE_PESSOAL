@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'MuseoModerno', cursive;
+}
+
+.projetos{
+    justify-content: center;
+}
+
+.projetos_slide{
+    max-width: 1200px;
+    width: 100%;
+    padding: 40px 0;
+    margin-top: 2.5em;
+}
+
+.projetos_slide_content{
+    margin: 0 40px;
+    overflow: hidden;
+    padding: 40px;
+}
+
+.projetos_card{
+    width: 320px;
+    border-radius: 25px;
+    background-color: #a5adee;
+    position: relative;
+}
+
+.projetos_imagem_content,
+.projetos_card_content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 14px;
+}
+
+.projetos_imagem_content{
+    position: relative;
+    row-gap: 5px;
+    padding: 25px 0;
+}
+
+.overlay{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #2e40d7;
+    border-radius: 25px 25px 0 25px;
+}
+
+.overlay::before,
+.overlay::after{
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: -40px;
+    height: 40px;
+    width: 40px;
+    background-color: #2e40d7;
+}
+
+.overlay::after{
+    border-radius: 0 25px 0 0;
+    background-color: #a5adee;
+}
+
+.projetos_imagem_card{
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background: #a5adee;
+    padding: 3px;
+}
+
+.projetos_imagem_card .projetos_imagem{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #2e40d7;
+}
+
+.projetos_card_content .nome{
+    color: #2d2d2d;
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+.projetos_card_content .descricao{
+    color: #333;
+    font-size: 1em;
+    font-weight: 400;
+    text-align: center;
+}
+
+.projetos_card_content .botao{
+    border: none;
+    font-size: 16px;
+    color: #a5adee;
+    padding: 8px 16px;
+    background-color: #2e40d7;
+    border-radius: 6px;
+    margin: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.projetos_card_content .botao:hover{
+    background: #0c1c9d;
+}
+
+@media(max-width: 1200px){
+    .projetos_slide{
+        max-width: 850px;
+    }
+}
+
+@media(max-width: 850px){
+    .projetos_slide{
+        max-width: 400px;
+    }
+    .projetos_slide_content{
+        margin: 0;
+    }
+}

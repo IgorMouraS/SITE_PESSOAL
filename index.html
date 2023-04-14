@@ -7,8 +7,9 @@
     <title>Igor Moura - Portifolio</title>
 
     <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/projetos.css">
+    <link rel="stylesheet" href="style/swiper-bundle.min.css">
 
-    <script src="https://kit.fontawesome.com/aa68db9477.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
@@ -77,7 +78,71 @@
 
         <section class="projetos" id="projetos">
             <h2 class="projetos_titulo">Projetos</h2>
-            <p><i class="fa-solid fa-person-digging"></i></p>
+
+            <div class="projetos_slide swiper">
+                <div class="projetos_slide_content">
+                    <div class="projetos_card_wrapper swiper-wrapper">
+                        <div class="projetos_card swiper-slide">
+                            <div class="projetos_imagem_content">
+                                <span class="overlay"></span>
+                                <div class="projetos_imagem_card">
+                                    <img src="components/imagem/projetos/foto_anonimo.jpg" alt="#" class="projetos_imagem">
+                                </div>
+                            </div>
+                            <div class="projetos_card_content">
+                                <h2 class="nome">Igor</h2>
+                                <p class="descricao">Lorem ipsum dolor</p>
+
+                                <button class="botao">Saiba Mais</button>
+                            </div>
+                        </div>
+                        <div class="projetos_card swiper-slide">
+                            <div class="projetos_imagem_content">
+                                <span class="overlay"></span>
+                                <div class="projetos_imagem_card">
+                                    <img src="components/imagem/projetos/foto_anonimo.jpg" alt="#" class="projetos_imagem">
+                                </div>
+                            </div>
+                            <div class="projetos_card_content">
+                                <h2 class="nome">Igor</h2>
+                                <p class="descricao">Lorem ipsum dolor</p>
+
+                                <button class="botao">Saiba Mais</button>
+                            </div>
+                        </div>
+                        <div class="projetos_card swiper-slide">
+                            <div class="projetos_imagem_content">
+                                <span class="overlay"></span>
+                                <div class="projetos_imagem_card">
+                                    <img src="components/imagem/projetos/foto_anonimo.jpg" alt="#" class="projetos_imagem">
+                                </div>
+                            </div>
+                            <div class="projetos_card_content">
+                                <h2 class="nome">Igor</h2>
+                                <p class="descricao">Lorem ipsum dolor</p>
+
+                                <button class="botao">Saiba Mais</button>
+                            </div>
+                        </div>
+                        <div class="projetos_card swiper-slide">
+                            <div class="projetos_imagem_content">
+                                <span class="overlay"></span>
+                                <div class="projetos_imagem_card">
+                                    <img src="components/imagem/projetos/foto_anonimo.jpg" alt="#" class="projetos_imagem">
+                                </div>
+                            </div>
+                            <div class="projetos_card_content">
+                                <h2 class="nome">Igor</h2>
+                                <p class="descricao">Lorem ipsum dolor</p>
+
+                                <button class="botao">Saiba Mais</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+
         </section>
 
         <div class="gradient_projetos"></div>
@@ -124,5 +189,8 @@
     </footer>
 
     <script src="components/script/script.js" defer></script>
+    <script src="https://kit.fontawesome.com/aa68db9477.js" crossorigin="anonymous"></script>
+    <script src="components/script/swiper-bundle.min.js"></script>
+    <script src="components/script/projetos.js"></script>
 </body>
 </html>
